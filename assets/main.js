@@ -1,0 +1,13 @@
+!function(c){function e(e){for(var t,n,r=e[0],o=e[1],u=e[2],s=0,i=[];s<r.length;s++)n=r[s],l[n]&&i.push(l[n][0]),l[n]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(c[t]=o[t]);for(d&&d(e);i.length;)i.shift()();return f.push.apply(f,u||[]),a()}function a(){for(var e,t=0;t<f.length;t++){for(var n=f[t],r=!0,o=1;o<n.length;o++){var u=n[o];0!==l[u]&&(r=!1)}r&&(f.splice(t--,1),e=s(s.s=n[0]))}return e}var n={},l={main:0},f=[];function s(e){if(n[e])return n[e].exports;var t=n[e]={i:e,l:!1,exports:{}};return c[e].call(t.exports,t,t.exports,s),t.l=!0,t.exports}s.m=c,s.c=n,s.d=function(e,t,n){s.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:n})},s.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},s.t=function(t,e){if(1&e&&(t=s(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var n=Object.create(null);if(s.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var r in t)s.d(n,r,function(e){return t[e]}.bind(null,r));return n},s.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return s.d(t,"a",t),t},s.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},s.p="../";var t=window.webpackJsonp=window.webpackJsonp||[],r=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var d=r;f.push(["./","vendor"]),a()}({"../js/test.js":
+/*!*********************!*\
+  !*** ../js/test.js ***!
+  \*********************/
+/*! exports provided: test, testJquery */function(e,r,o){"use strict";o.r(r),function(e){function t(e){console.log(["TEST",e.toUpperCase()].join(" "))}function n(){console.log(e(document))}o.d(r,"test",function(){return t}),o.d(r,"testJquery",function(){return n})}.call(this,o(/*! jquery */"../../node_modules/jquery/dist/jquery.js"))},"../main.scss":
+/*!********************!*\
+  !*** ../main.scss ***!
+  \********************/
+/*! no static exports found */function(e,t,n){},"./":
+/*!*********!*\
+  !*** . ***!
+  \*********/
+/*! no exports provided */function(e,t,n){"use strict";n.r(t);n(/*! ./main.scss */"../main.scss"),n(/*! bootstrap */"../../node_modules/bootstrap/dist/js/bootstrap.js");var r,o=n(/*! ./js/test */"../js/test.js");r=function(){console.log("Loaded"),Object(o.test)("wordpress"),Object(o.testJquery)()},"loading"!=document.readyState?r():document.addEventListener("DOMContentLoaded",r)}});
